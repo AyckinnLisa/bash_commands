@@ -31,7 +31,7 @@ python -c "import pty; pty.spawn('/bin/bash')"
 > [!NOTE]
 > - `python`: Appelle Python. Dans notre cas, c'est Python2 qui est installé sur la machine. Adaptez la commande à la version de Python utilisée par la machine.
 > - `-c`: Indique que nous allons lui passer une commande sous forme de chaîne de caractères (notre script)
-> - `import pty`: Bibliothèque en charge de l'émulation des Terminaux Unix
+> - `import pty`: Module en charge de l'émulation des Terminaux Unix
 > - `pty.spawn()`: Initialise l'instance du Terminal et prend le chemin de celui-ci en paramètre
 > - `/bin/bash`: Terminal que nous utilisons sur la `Metasploitable2`.
 > <br>A Adapter si vous souhaitez utiliser `zsh` ou un autre Terminal, dans la mesure où il est présent sur la machine
@@ -44,4 +44,5 @@ root@metasploitable:/#
 
 Voilà, vous avez accès au Terminal et à toutes ses fonctionnalités.
 
-<br>Lien vers les différents [payloads Python pour le spawn de Terminal](https://gtfobins.github.io/gtfobins/python/#suid)
+<br>Lien vers les différents [payloads Python pour le spawn de Terminal](https://gtfobins.github.io/gtfobins/python/#suid).
+<br>Documentation officielle Python pour le [module pty](https://docs.python.org/fr/3/library/pty.html).
