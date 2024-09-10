@@ -2,7 +2,7 @@
 
 Dans le cas d'une élévation de privilèges par exemple, ou encore, de la prise de contrôle à distance d'une machine, par `Telnet` ou `NetCat`, il peut s'avérer très utile de travailler avec un Terminal Unix, par habitude par exemple.
 
-Il existe une commande qui permet de faire apparaître un Terminal en utilisant un mini script `Python`.
+Il existe une commande qui permet de faire apparaître un Terminal en utilisant un mini payload `Python`.
 
 Pour ce faire, il y a deux pré-requis:
 - Etre `root` sur la machine distante
@@ -44,4 +44,4 @@ root@metasploitable:/#
 
 Voilà, vous avez accès au Terminal et à toutes ses fonctionnalités.
 
-<br>Lien vers les différents [scripts Python pour le spawn de Terminal](https://gtfobins.github.io/gtfobins/python/#suid)
+<br>Lien vers les différents [payloads Python pour le spawn de Terminal](https://gtfobins.github.io/gtfobins/python/#suid)
