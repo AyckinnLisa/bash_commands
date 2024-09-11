@@ -66,5 +66,5 @@ root    ALL=(ALL:ALL) ALL
 <br>
 
 > [!TIP]
-> Ne vous y connectez que temporairement, le temps de votre action
+> Ne vous connectez a `root` <b>QUE</b> temporairement, le temps de votre action
 > <br>Une fois terminée, sortez du mode `root` avec la commande `exit`
