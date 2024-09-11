@@ -13,13 +13,13 @@ Ce qui m'a contraint à faire une réinstallation complète de la machine. Ben..
 >
 > <br>SI VOUS NE SAVEZ PAS CE QUE VOUS FAITES, NE LE FAITES PAS !!
 
-<br>Pour commencer, il faut crer un mot de passe pour `root`:
+<br>Pour commencer, il faut créer un mot de passe pour `root`:
 
 ```bash
 sudo passwd root
 ```
 
-<br>Vous êtes invités à taper le nouveau mot de passe pour `root`, puis, à le retaper:
+<br>Vous êtes invités à taper le nouveau mot de passe, puis, à le retaper:
 
 <pre>
 Nouveau mot de passe : &lt;votre_pass&gt;
