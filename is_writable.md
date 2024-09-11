@@ -25,8 +25,11 @@ find / -type d -writable
 > [!NOTE]
 > Trouve (`find`) à la racine (`/`) tous les éléménts de type "dossier" (`-type d`) inscriptibles (`-writable`)
 
+<br>
+
 Cela sortira le listing de **TOUS** les dossiers inscriptibles. Y compris ceux avec les permissions non accordées.
-<br>Ces dossiers n'étant pas utiles, il est possible de n'afficher que les dossiers auxquels nous avons accès:
+
+Ces dossiers n'étant pas utiles, il est possible de n'afficher que les dossiers auxquels nous avons accès:
 
 ```bash
 find / -type d -writable 2>/dev/null
