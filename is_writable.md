@@ -1,9 +1,12 @@
 # SAVOIR QUELS DOSSIERS SONT INSCRIPTIBLES
 
 Dans certains cas, notamment de piratage de machine, il peut être nécessaire de savoir quels dossiers sont inscriptibles, c'est à dire, dans quels dossiers il est possible d'écrire ou non.
-<br>Dans cette même perspective, le dossier `/tmp`, par exemple, est l'un des dossiers les plus importants.
-<br>En effet, dans la mesure où tout son contenu est supprimé à chaque redémarrage, il est très facile d'y cacheer des `payloads` ou des scripts le temps de notre action.
-<br>Ainsi, même si par mégarde vous oubliez de supprimer vos traces, elles le seront au prochain démarrage.
+
+Dans cette même perspective, le dossier `/tmp`, par exemple, est l'un des dossiers les plus importants.
+
+En effet, dans la mesure où tout son contenu est supprimé à chaque redémarrage, il est très facile d'y cacheer des `payloads` ou des scripts le temps de notre action.
+
+Ainsi, même si par mégarde vous oubliez de supprimer vos traces, elles le seront au prochain démarrage.
 
 <br>
 
@@ -16,6 +19,11 @@ Dans certains cas, notamment de piratage de machine, il peut être nécessaire d
 ```bash
 find / -type d -writable
 ```
+
+<br>
+
+> [!NOTE]
+> Trouve (`find`) à la racine (`/`) tous les éléménts de type "dossier" (`-type d`) inscriptibles (`-writable`)
 
 Cela sortira le listing de **TOUS** les dossiers inscriptibles. Y compris ceux avec les permissions non accordées.
 <br>Ces dossiers n'étant pas utiles, il est possible de n'afficher que les dossiers auxquels nous avons accès:
