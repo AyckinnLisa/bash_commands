@@ -32,10 +32,35 @@ Retapez le nouveau mot de passe : &lt;votre_pass&gt;
 3. Essayer d'en trouver un facile à retenir tout de même pour vous
 4. Ne jamais le donner à personne, on croit connaître les gens...
 
-<br>Quand c'est fait, il suffit simplement de taper la commande suivante pour s'y connecter:
+Pour se connecter à `root`, tapez simplement:
 
 ```bash
 su -
+```
+
+<br>Il faut maintenant vérifier que `root` a bien tous les droits.
+<br>Pour ce faire, il va falloir editer le fichier `visudo`, qui ne peut être éditer **QUE** par `root` ou tout autre utilisateur ayant tous les droits.
+
+Editez le fichier `visudo`:
+
+```bash
+su -
+```
+
+Entrez votre mot de passe, puis tapez:
+
+```bash
+visudo
+```
+
+Cherchez la ligne:
+<pre>
+&#35 User privilege specification
+</pre>
+
+Puis ajoutez ectte ligne (si elle n'y est pas déjà):
+```
+root    ALL=(ALL:ALL) ALL
 ```
 
 <br>
